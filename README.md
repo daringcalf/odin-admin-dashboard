@@ -14,7 +14,7 @@ This project demonstrates CSS Grid layout techniques by creating a dashboard wit
 
 - HTML
 - CSS Grid
-- Material Design Icons
+- [Material Design Icons](https://pictogrammers.com/library/mdi/)
 
 ## Usage
 
