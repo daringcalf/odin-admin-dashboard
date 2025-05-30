@@ -271,6 +271,7 @@ main {
   grid-row: 2 / -1;
   display: grid;
   grid-template-columns: 2.5fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 1.5rem;
   padding: 2.5rem 1.5rem;
   background-color: #E2E8F0;
@@ -278,7 +279,12 @@ main {
   box-shadow: inset 0 10px 10px -5px rgba(0, 0, 0, 0.1);
 }
 
-.dashboard-content h1 {
+.dashboard-content {
+  grid-column: 1;
+  grid-row: 1 / -1;
+}
+
+main h1 {
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 1rem;
@@ -347,4 +353,14 @@ main {
 
 .project-item .project-actions button:hover {
   background-color: #E2E8F0;
+}
+
+.announcements {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.trending {
+  grid-column: 2;
+  grid-row: 2;
 }
