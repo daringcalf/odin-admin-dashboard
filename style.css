@@ -399,3 +399,32 @@ main h1 {
   grid-column: 2;
   grid-row: 2;
 }
+
+.trending-list {
+  display: grid;
+  grid-auto-rows: max-content;
+  gap: 2rem;
+  padding: 1.5rem;
+}
+
+.trending-item {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.trending-item-details {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.2rem;
+}
+
+.trending-item-details h2 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.trending-item-details p {
+  color: gray;
+}
