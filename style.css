@@ -360,6 +360,40 @@ main h1 {
   grid-row: 1;
 }
 
+.announcement-list {
+  display: grid;
+  grid-auto-rows: 100px;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.announcement-item {
+  border-bottom: 1.5px solid #E2E8F0;
+  padding-bottom: 0.5rem;
+}
+
+.announcement-item:last-child {
+  border-bottom: none;
+}
+
+.announcements h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.announcement-item p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  font-size: 1rem;
+  color: gray;
+  font-size: 0.9rem;
+}
+
 .trending {
   grid-column: 2;
   grid-row: 2;
