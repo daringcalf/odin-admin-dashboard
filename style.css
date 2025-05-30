@@ -29,7 +29,7 @@ img {
 
 #app {
   display: grid;
-  grid-template-columns: minmax(min-content, 380px) minmax(1200px, 1fr);
+  grid-template-columns: minmax(min-content, 380px) minmax(1250px, 1fr);
   grid-template-rows: 220px 1fr;
   width: 100dvw;
 }
@@ -133,7 +133,7 @@ header {
   display: grid;
   grid-template-rows: 50px 1fr;
   align-items: center;
-  padding: 1rem 4rem;
+  padding: 1.5rem 5rem 1rem 4rem;
 }
 
 .header-top {
@@ -145,9 +145,17 @@ header {
 
 .search-bar {
   display: grid;
-  grid-template-columns: 48px 1fr;
+  grid-template-columns: 48px 750px;
   align-items: center;
-  gap: 1rem;
+}
+
+.header-top .search-bar input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: #E2E8F0;
+  font-size: 1.2rem;
 }
 
 .user-profile {
@@ -167,12 +175,71 @@ header {
 .user-info .user-name {
   font-size: 1.4rem;
   font-weight: 600;
+  text-wrap: nowrap;
 }
 
 .user-info img {
-  width: 48px;
-  height: 48px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
+}
+
+.header-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  align-self: end;
+}
+
+.header-bottom .user-greeting {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.header-bottom .user-greeting img {
+  width: 100px;
+  height: 100px;
+}
+
+.header-bottom .user-greeting .greeting-text {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  align-items: center;
+}
+
+.header-bottom .user-greeting .greeting-text .greeting {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.header-bottom .user-greeting .greeting-text .user-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.header-bottom .user-greeting .greeting-text .user-name a {
+  color: unset;
+  text-decoration: none;
+}
+
+.header-bottom .action-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  gap: 1.8rem;
+  justify-self: end;
+}
+
+.header-bottom .action-buttons button {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: #1992D4;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 main {
