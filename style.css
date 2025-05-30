@@ -20,6 +20,13 @@ nav svg {
   fill: white;
 }
 
+img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
 #app {
   display: grid;
   grid-template-columns: minmax(min-content, 380px) minmax(1200px, 1fr);
